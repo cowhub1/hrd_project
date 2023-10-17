@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/signup.css}">
+</head>
+<body>
+  <div class="container">
+      <header class="logo">
+          <img class="logo_text" src="img/logo_text.png" alt="로고">
+          <div>
+              <span class=lets>친구들의 사진과 동영상을 보려면</span>
+              <span class=lets> 가입하세요.</span>
+          </div>
+      </header>
+      <div class="or_line">
+          <div class="line"></div>
+          <div class="text">회원가입</div>
+          <div class="line"></div>
+      </div>
+      <form name="join" action="" method="post"> 
+          <!--post :암호화방식-->
+          <input class="addEmail" type="text" name="email" placeholder="아이디 또는 이메일 주소">
+          <input class="name" type="text" name="fullname" placeholder="성명">
+          <input class="id" type="text" name="username" placeholder="사용자 이름">
+          <input class="pw" type="password" name="passwore" placeholder="비밀번호">
+          <button class="btn_join" type="submit">가입</button>
+          <!-- onclick="joinClick() <a href="#"></a>-->
+      </form>
+  </div>
+  <div class="account_login">
+      <span class="question">
+          <p>계정이 있으신가요?
+            <a class="a" href="login.html">
+              <span class="login">로그인</span>
+            </a>
+          </p>
+        </span>
+      </div>
+      
+</body>
+</html>
